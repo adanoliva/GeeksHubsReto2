@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Esta es la web HOME del RETO 2 del Bootcamp FrontReact de GeeksHubs"/>
+    <meta name="keywords" content="gekkshubs, reto, home, inicio, html, css, perfil, personal"/>
+    <meta name="author" content="Adán Oliva" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="css/style.css" type="text/css" rel="stylesheet">
+
+    <script type="text/javascript" src="js/shopping.js"></script>    <title>Reto 2: Cesta de la compra</title>
+</head>
+<body style="
+        background-image: url('images/fondo1.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;"
+>
+    <div class="container">
+        <div>
+            <header>
+                <h1 class="textoTitulo">Supermercado</h1>
+            </header>
+            <div ondrop="drop(event,0)" 
+            ondragover="allowDrop(event)"
+            class="contenedorSuper col-sm" id="super">
+                <img src="images/png/avocado.png" id="aguacate" draggable="true" width="5%" ondragstart="mover(event,8)" ondragend="soltar()"/>
+                <img src="images/png/lemon-1.png" id="limon" draggable="true" width="5%" ondragstart="mover(event,2)" ondragend="soltar()"/>
+                <img src="images/png/strawberry.png" id="fresa" draggable="true" width="5%" ondragstart="mover(event,2)" ondragend="soltar()"/>
+                <img src="images/png/orange.png" id="naranja" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/pear.png" id="pera" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/pineapple.png" id="piña" draggable="true" width="5%" ondragstart="mover(event,2)" ondragend="soltar()"/>
+                <img src="images/png/banana.png" id="banana" draggable="true" width="5%" ondragstart="mover(event,3)" ondragend="soltar()"/>
+                <img src="images/png/cherries.png" id="cereza" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/apple-1.png" id="manzana" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/pomegranate.png" id="pomelo" draggable="true" width="5%" ondragstart="mover(event,3)" ondragend="soltar()"/>
+                <img src="images/png/aubergine.png" id="berengena" draggable="true" width="5%" ondragstart="mover(event,6)" ondragend="soltar()"/>
+                <img src="images/png/cabbage.png" id="repollo" draggable="true" width="5%" ondragstart="mover(event,2)" ondragend="soltar()"/>
+                <img src="images/png/beans.png" id="guisantes" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/asparagus.png" id="esparragos" draggable="true" width="5%" ondragstart="mover(event,3)" ondragend="soltar()"/>
+                <img src="images/png/blueberries.png" id="arandanos" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/chives.png" id="cebollin" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/carrot.png" id="zanahoria" draggable="true" width="5%" ondragstart="mover(event,7)" ondragend="soltar()"/>
+                <img src="images/png/cauliflower.png" id="coliflor" draggable="true" width="5%" ondragstart="mover(event,8)" ondragend="soltar()"/>
+                <img src="images/png/coconut.png" id="coco" draggable="true" width="5%" ondragstart="mover(event,7)" ondragend="soltar()"/>
+                <img src="images/png/chili.png" id="chili" draggable="true" width="5%" ondragstart="mover(event,9)" ondragend="soltar()"/>
+                <img src="images/png/broccoli.png" id="brocoli" draggable="true" width="5%" ondragstart="mover(event,15)" ondragend="soltar()"/>
+                <img src="images/png/corn.png" id="maiz" draggable="true" width="5%" ondragstart="mover(event,12)" ondragend="soltar()"/>
+                <img src="images/png/cucumber.png" id="pepino" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/garlic.png" id="ajo" draggable="true" width="5%" ondragstart="mover(event,4)" ondragend="soltar()"/>
+                <img src="images/png/grapes.png" id="uvas" draggable="true" width="5%" ondragstart="mover(event,8)" ondragend="soltar()"/>
+                <img src="images/png/olives.png" id="aceitunas" draggable="true" width="5%" ondragstart="mover(event,9)" ondragend="soltar()"/>
+                <img src="images/png/mushrooms.png" id="champis" draggable="true" width="5%" ondragstart="mover(event,6)" ondragend="soltar()"/>
+                <img src="images/png/peach.png" id="melocoton" draggable="true" width="5%" ondragstart="mover(event,1)" ondragend="soltar()"/>
+                <img src="images/png/pepper.png" id="pimientos" draggable="true" width="5%" ondragstart="mover(event,2)" ondragend="soltar()"/>
+                <img src="images/png/potatoes-2.png" id="patatas" draggable="true" width="5%" ondragstart="mover(event,5)" ondragend="soltar()"/>
+                <img src="images/png/pumpkin.png" id="calabaza" draggable="true" width="5%" ondragstart="mover(event,8)" ondragend="soltar()"/>
+                <img src="images/png/radish.png" id="rabanos" draggable="true" width="5%" ondragstart="mover(event,7)" ondragend="soltar()"/>
+                <img src="images/png/salad-1.png" id="lechuga" draggable="true" width="5%" ondragstart="mover(event,9)" ondragend="soltar()"/>
+                <img src="images/png/tomato.png" id="tomato" draggable="true" width="5%" ondragstart="mover(event,5)" ondragend="soltar()"/>
+                <img src="images/png/watermelon.png" id="sandia" draggable="true" width="5%" ondragstart="mover(event,6)" ondragend="soltar()"/>
+                <img src="images/png/hazelnut.png" id="bellota" draggable="true" width="5%" ondragstart="mover(event,11)" ondragend="soltar()"/>
+            </div>
+            <div class="bg-light text-danger">
+                <span id ="producto"></span>
+                <span id="precio"></span>
+            </div>
+        </div>
+
+   
+        <div id="cestaCompra">
+            <header>
+                <h1 class="textoTitulo">Cesta de la compra</h1>
+                <div class="bg-light text-danger">
+                    <h4>Total: <span id="total">0</span>€</h4>
+                </div>
+            </div>
+            </header>
+                
+            <div ondrop="drop(event, 1)" 
+            ondragover="allowDrop(event)"
+            class="contenedorCesta col-sm"
+            id="cesta"
+            ></div>
+
+        </div>
+    </div>
+    <footer class="fixed-bottom bg-dark text-white text-center">
+        <div>Iconos diseñados por <a href="https://www.flaticon.es/autores/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es</a></div>
+    </footer>
+</body>
+</html> 
